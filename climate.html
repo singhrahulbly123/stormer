@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		<!-- SITE TITLE -->
+		<title>Mugni - Weather Forcast HTML5 Website Template</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+		
+		<!-- Latest Bootstrap min CSS -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">	
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="../../css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;family=Rajdhani:wght@400;500;600;700&amp;display=swap" rel="stylesheet">		
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="assets/fonts/font-awesome.css">
+		<!--- owl carousel Css-->
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+		<!--magnific-popup Css-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<!--animate Css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+		<!--odometer.min Css-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		
+	</head>
+
+	<body>
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+		
+			<!-- START PRELOADER -->
+			<div id="atf-loader">
+				<div id="atf-loading">
+					<div id="atf-loading-center">
+						<img src="assets/img/weather.gif" class="img-fluid" alt="weather">
+					</div>
+				</div>
+			</div>
+			<!-- END PRELOADER -->
+			
+			<!-- Back to Top Start -->
+			<a href="#" id="back_to_top" class=""><i class="fa fa-long-arrow-up"></i></a>
+			<!-- Back to Top End -->
+		
+				<!-- Start Header Section -->
+			<header class="atf-site-header atf-style1 atf-sticky-header">
+				<div class="atf-main-header">
+					<div class="container">
+						<div class="atf-main-header-in">
+							<div class="atf-main-header-left">
+								<a class="atf-site-branding atf-white-logo" href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+							</div>
+							<div class="atf-main-header-right">
+								<div class="atf-nav">
+									<ul class="atf-nav-list">
+										<li class="menu-item-has-children"><a href="index.html">Home <i class="fa fa-chevron-down ms-1 arrow-btn f-13"></i></a>
+											<ul>
+												<li><a href="index.html">Home 1</a></li>
+												<li><a href="index1.html">Home 2</a></li>
+											</ul>
+										</li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="climate.html">Climate change</a></li>
+										<li><a href="picture.html">Picture</a></li>
+										<li class="menu-item-has-children"><a href="blog.html">News <i class="fa fa-chevron-down ms-1 arrow-btn f-13"></i></a>
+											<ul>
+												<li><a href="blog.html">News</a></li>
+												<li><a href="blog-details.html">News Details</a></li>
+											</ul>
+										</li>
+										<li><a href="map.html">Map</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li class="atf-menu-btn d-none d-lg-block">
+											<a href="#" class="atf-themes-btn"><span></span><span></span><span></span><span></span>Signup</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End Header Section -->
+				
+			<!-- Start Page Header -->
+			<div class="atf-page-heading atf-size-md" style="background-image: url(assets/img/bg/6.jpg); background-size:cover; background-position: center center;">
+				<div class="container">
+					<div class="row">
+						<div class="atf-page-heading-in text-center">
+							<h1 class="atf-page-heading-title">Climate Change</h1>
+							<div class="atf-post-label">
+								<span><a href="index.html">Home</a></span>
+								<span>Jan 15, 2024</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end-page-heading -->
+			
+			<!-- CLIMATE SECTION START-->
+			<section id="climate" class="atf-climate-area atf-section-padding pb-0">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-6 col-12 text-center">
+							<div class="atf-section-title mb-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<h5 class="sub-title">Climate</h5>
+								<h2>World Weather Change</h2>
+							</div>
+						</div><!--- END COL -->
+					</div><!--- END ROW -->
+					
+					<div class="row align-items-center">
+						<div class="col-lg-12">
+							<div class="atf-climate-map">
+								<div id="chart_div" style="width: 100%; height: 500px;"></div>				
+							</div><!--- END CONTACT -->
+						</div><!--- END COL -->
+					</div><!--- END ROW -->
+				</div><!--- END CONTAINER -->
+			</section>
+			<!-- CLIMATE SECTION END-->
+			
+
+			<!-- START EVENT -->
+			<section id="event" class="atf-event-area atf-section-padding">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="atf-section-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<h5 class="sub-title">Events</h5>
+								<h2 class="">Upcoming Weather News</h2>
+							</div>
+						</div><!--- END COL -->
+						
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="atf-section-title  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<p class="border-left ps-5">Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit dolor sit amet elit.</p>
+							</div>
+						</div><!--- END COL -->
+					</div><!--- END ROW -->
+
+					
+					<div class="row">
+						<div class="atf-events-area">
+							<div class="col-lg-12 col-md-12 col-12">
+								<div class="row align-items-center">
+									<div class="col-lg-2 col-12">
+										<div class="atf-event-img text-center">
+											<img src="assets/img/event/1.jpg" alt="event">
+										</div>
+									</div><!--- END COL -->
+									
+									<div class="col-lg-8 col-12">
+										<div class="atf-event-content">
+											<h4 class="atf-event-title"><a href="#">Climate to change people poor help fund project in 2024...</a></h4>
+											<p class="atf-event-description">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit child & poor.
+											</p>
+											<ul class="atf-event-bar">
+												<li class="atf-date"><i class="far fa-clock"></i>14 November, 2024</li>
+												<li class="atf-author"><i class="fa fa-user"></i><a href="#"><strong>Climate</strong>: Rainfall</a></li>
+												<li class="atf-comment"><i class="fa fa-comment"></i><a href="#"> <strong>Location</strong> : United State</a></li>
+											</ul>
+										</div><!--- END COL -->
+									</div><!--- END COL -->
+									
+									<div class="col-lg-2 col-12">
+										<div class="atf-main-btn">
+											<a href="#" class="atf-themes-btn"><span></span><span></span><span></span><span></span>Learn More</a>
+										</div>
+									</div><!--- END COL -->
+								</div><!--- END ROW -->
+							</div><!--- END COL -->
+						</div>
+						
+						<div class="col-lg-12 atf-events-area">
+							<div class="row align-items-center">
+								<div class="col-lg-2 col-12">
+									<div class="atf-event-img text-center">
+										<img src="assets/img/event/2.jpg" alt="event">
+									</div>
+								</div><!--- END COL -->
+								<div class="col-lg-8 col-12">
+									<div class="atf-event-content">
+										<h4 class="atf-event-title"><a href="#">Be Volunteers to change poor help fund project in 2024...</a></h4>
+										<p class="atf-event-description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit child & poor.
+										</p>
+										<ul class="atf-event-bar">
+											<li class="atf-date"><i class="far fa-clock"></i>14 November, 2024</li>
+											<li class="atf-author"><i class="fa fa-user"></i><a href="#"><strong>Climate</strong>: Rainfall</a></li>
+											<li class="atf-comment"><i class="fa fa-comment"></i><a href="#"> <strong>Location</strong> : United State</a></li>
+										</ul>
+									</div><!--- END COL -->
+								</div><!--- END COL -->
+								
+								<div class="col-lg-2 col-12">
+									<div class="atf-main-btn">
+										<a href="#" class="atf-themes-btn"><span></span><span></span><span></span><span></span>Learn More</a>
+									</div>
+								</div><!--- END COL -->
+							</div><!--- END ROW -->
+						</div><!--- END COL -->
+						
+						<div class="col-lg-12 atf-events-area">
+							<div class="row align-items-center">
+								<div class="col-lg-2 col-12">
+										<div class="atf-event-img text-center">
+											<img src="assets/img/event/3.jpg" alt="event">
+										</div>
+									</div><!--- END COL -->
+								
+								<div class="col-lg-8 col-12">
+									<div class="atf-event-content">
+										<h4 class="atf-event-title"><a href="#">Founder & Campaign Climate to change poor help fund progress in 2024...</a></h4>
+										<p class="atf-event-description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit child & poor.
+										</p>
+										<ul class="atf-event-bar">
+											<li class="atf-date"><i class="far fa-clock"></i>14 November, 2024</li>
+											<li class="atf-author"><i class="fa fa-user"></i><a href="#"><strong>Climate</strong>: Humidity</a></li>
+											<li class="atf-comment"><i class="fa fa-comment"></i><a href="#"> <strong>Location</strong> : United State</a></li>
+										</ul>
+									</div><!--- END COL -->
+								</div><!--- END COL -->
+								
+								<div class="col-lg-2 col-12">
+									<div class="atf-main-btn">
+										<a href="#" class="atf-themes-btn"><span></span><span></span><span></span><span></span>Learn More</a>
+									</div>
+								</div><!--- END COL -->
+							</div><!--- END ROW -->
+						</div><!--- END COL -->
+					</div><!--- END ROW -->
+				</div><!--- END CONTAINER -->
+			</section>
+			<!-- END EVENT -->
+			
+			<!-- START ABOUT -->
+			<section id="choose" class="atf-section-padding">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-6 col-12">
+							<div class="atf-about-inner wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="atf-about-image img-fluid">
+									<img src="assets/img/about/2.jpg" alt="about" class="card-s">
+								</div>
+							</div>
+						</div><!--- END COL -->
+						
+						<div class="col-xl-6 col-12 mt-xl-40 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+							<div class="atf-section-title text-start ps-lg-5 mb-0">
+								<h5 class="sub-title"> What can I Do</h5>
+								<h2 class="mb-3">Weather index of Climate change of Social in our country</h2>
+								<p>Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit dolor sit amet elit.Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit.</p>
+								
+								<!-- Main-btn -->
+								<div class="atf-hero-btn mt-4 float-start  me-3"> 
+									<a href="#" class="page-scroll atf-themes-btn"><span></span><span></span><span></span><span></span>Learm More</a>
+								</div>	
+							</div>
+						</div><!--- END COL -->
+					</div><!--- END ROW -->
+				</div><!--- END CONTAINER -->
+			</section>
+			<!-- END ABOUT -->
+				
+			<!-- FOOTER SECTION START-->
+			<footer id="footer" class="atf-footer-area">
+				<div class="container">
+					<div class="atf-section-padding">
+						<div class="row atf-mailchamp-border clearfix">
+							<div class="col-xl-6 col-md-6 col-12">
+								<div class="atf-mailchamp-headding">
+									<h2>Update to Weather Information</h2>
+								</div>
+							</div><!--- END COL -->
+							
+							<div class="col-xl-6 col-md-6 col-12 atf-mailchamp-subscribe">
+								<form class="form-group" id="mc-form">
+									<input type="email" name="EMAIL" class="form-control" id="email" placeholder="Your Email" required="required">
+									<button type="submit" id="subscribe-button" class="atf-themes-btn">
+									<span></span><span></span><span></span><span></span>Subcribe</button>
+									
+									<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+									<label class="atf-subscription-label" for="email"></label>
+								</form>
+							</div><!--- END COL -->
+						</div><!--- END COL -->
+						
+						
+						<div class="row">
+							<div class="col-lg-4 col-md-6 col-12">
+								<div class="atf-footer-link">
+									<div class="atf-footer-box pe-lg-5">
+										<h5>About Company</h5>
+										<p class="mt-3"> Lorem ipsum dolor sit amet elit , consec teture adipis cing sed eiusmod tempor sit amet.</p>
+										<h4 class="text-white mt-3">Follow Us</h4>
+										<div class="atf-footer-social-icon mt-3">
+											<a href="#" class="icon"> <i class="fab fa-facebook"></i> </a>
+											<a href="#" class="icon"> <i class="fab fa-dribbble"></i> </a>
+											<a href="#" class="icon"> <i class="fab fa-behance"></i> </a>
+											<a href="#" class="icon"> <i class="fab fa-linkedin"></i> </a>
+										</div>
+									</div>
+								</div>
+							</div><!--- END COL -->
+							
+							<div class="col-lg-2 col-md-6 col-6">
+								<div class="atf-footer-link">
+									<h5>Contact Us</h5>
+									<ul class="atf-list-menu">
+										<li><a href="#"><i class="fas fa-phone me-2"></i>000 2222 333</a></li>
+										<li><a href="#"><i class="fa fa-envelope me-2"></i>info@example.com</a></li>
+										<li><a href="#"><i class="fa fa-location me-2"></i>Newyork City, Road 12, Californiya</a></li>
+									</ul>
+								</div>
+							</div><!--- END COL -->
+							
+							<div class="col-lg-2 col-md-6 col-6">
+								<div class="atf-footer-link">
+									<h5>Our Links</h5>
+									<ul class="atf-list-menu">
+										<li> <a href="#"><i class="fa fa-angle-right me-2"></i>Get Stared</a></li>
+										<li> <a href="#"><i class="fa fa-angle-right me-2"></i>Our Team</a></li>
+										<li> <a href="#"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+										<li> <a href="privacy.html"><i class="fa fa-angle-right me-2"></i>Privacy & Policy</a></li>
+										<li> <a href="terms.html"><i class="fa fa-angle-right me-2"></i>Terms & Condition</a></li>
+									</ul>
+								</div>
+							</div><!--- END COL -->
+							
+							<div class="col-lg-4 col-md-6 col-12">
+								<div class="atf-footer-link">
+									<h5>Weather Map</h5>
+									<!-- Google Map start-->
+									 <div class="atf-map-area">
+										<iframe src="https://www.meteoblue.com/en/weather/maps/widget/basel_switzerland_2661604?windAnimation=0&windAnimation=1&gust=0&gust=1&satellite=0&satellite=1&cloudsAndPrecipitation=0&cloudsAndPrecipitation=1&temperature=0&temperature=1&sunshine=0&sunshine=1&extremeForecastIndex=0&extremeForecastIndex=1&geoloc=fixed&tempunit=C&windunit=km%252Fh&lengthunit=metric&zoom=5&autowidth=auto"></iframe>
+									</div>
+								</div>
+							</div><!--- END COL -->
+						</div><!--- END ROW -->
+					</div>
+				</div><!--- END CONTAINER -->
+					
+				<div class="atf-footer-boottom text-center">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="atf-link">
+								<p>Copyright - All Right Reserved.Designed <i class="fa fa-heart ms-1 me-1"></i> by <a href="">Theme Family</a> </p>
+							</div><!--- END COL -->
+						</div><!--- END COL -->
+					</div><!--- END ROW -->
+				</div>
+			</footer>
+			<!-- FOOTER SECTION END-->	
+			
+		</div>
+		<!-- PAGE WRAPPER END-->
+		
+		<!-- Latest jQuery -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- modernizer JS -->		
+		<script src="assets/js/modernizr.custom.js"></script>
+		<!-- Latest compiled and minified Bootstrap -->
+		<script src="assets/bootstrap/js/bootstrap.js"></script>
+		<!-- imagesloaded JS -->
+		<script src="assets/js/imagesloaded.pkgd.js"></script>	
+		<!-- owl-carousel min js  -->
+		<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+		<!-- magnific-popup js -->	
+		<script src="assets/js/jquery.magnific-popup.js"></script>		
+		<!-- odometer js -->
+		<script src="assets/js/slick.js"></script>
+		<!-- wow js -->
+		<script src="assets/js/loader.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<!-- ajaxchimp js -->
+		<script src="assets/js/ajaxchimp.min.js"></script>
+		<!-- form-contact js -->
+		<script src="assets/js/form-contact.js"></script>
+		<!-- main js -->
+		<script src="assets/js/main.js"></script>	
+		<script>
+			  google.charts.load('current', {'packages':['corechart']});
+			  google.charts.setOnLoadCallback(drawChart);
+
+		  function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+			  ['Mon', 20, 28, 38, 45],
+			  ['Tue', 31, 38, 55, 66],
+			  ['Wed', 50, 55, 77, 80],
+			  ['Thu', 77, 77, 66, 50],
+			  ['Fri', 68, 66, 22, 15],
+			  ['Sat', 31, 38, 55, 66],
+			  ['Sun', 20, 28, 38, 45]
+			  // Treat first row as data as well.
+			], true);
+
+			var options = {
+			  title: 'Our Weather Information :',
+			  legend: 'none',
+			  bar: { groupWidth: '100%' }, // Remove space between bars.
+			  candlestick: {
+				fallingColor: { strokeWidth: 0, fill: '#a52714' }, // red
+				risingColor: { strokeWidth: 0, fill: '#0f9d58' }   // green
+			  }
+			};
+
+
+			var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
+
+			chart.draw(data, options);
+		  }
+			</script>
+
+		
+	</body>
+</html>
